@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- fieldset example -->
+    <h1>Fieldset Example</h1>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <br>
+    <!-- END -->
+    <!-- datalist example -->
+    <h1>Datalist example</h1>
+    <form action="/action_page.php">
+        <input list="browsers">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+      </form>
+      <br>
+      <!-- END -->
+      <!-- output example -->
+      <h1>Output example</h1>
+     <form action="/action_page.php" oninput="x.value=parseInt(a.value)-parseInt(b.value)">0
+         <input type="range"  id="a" name="a" value="50">100 + <input type="number" id="b" name="b" value="50">=
+         <output name="x" for="a b"></output>
+         <br><br>
+         <input type="submit">
+     </form>
+    <!-- END -->
+</body>
+</html>
