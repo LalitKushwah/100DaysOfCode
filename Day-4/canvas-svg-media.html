@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-4</title>
+</head>
+<body>
+    <!-- SVG Star -->
+    <div style="margin: 100px;">
+        <h1>SVG Star</h1>
+        <svg width="300" height="200">
+            <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:blue;stroke:black;stroke-width:5;fill-rule:evenodd;" />
+        </svg>
+    </div>
+    <!-- Canvas Examples Start -->
+    <div style="margin: 100px;">
+        <h1>Canvas moveTo and lineTo Practice</h1>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid black"></canvas>
+    </div>
+    <div style="margin: 100px;">
+        <h1>SVG with Existing circle tag (Fill color will be changed after 5 seconds)</h1>
+        <svg width="100" height="100">
+            <circle id="circle" cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+          </svg>
+    </div>
+    <!-- END  -->
+   <script>
+    // Canvas Start
+       const canvas = document.getElementById('myCanvas');
+       const context = canvas.getContext("2d");
+       context.moveTo(0, 0);
+       context.lineTo(200, 100);
+       context.stroke();
+       context.moveTo(200, 0);
+       context.lineTo(0, 100);
+       context.stroke();
+       context.moveTo(100, 0);
+       context.lineTo(100, 100);
+       context.stroke();
+       context.moveTo(0, 50);
+       context.lineTo(200, 50);
+       context.stroke();
+    // End
+
+    // SVG Start
+    const circle = document.getElementById('circle')
+    setTimeout(function () {
+        circle.style.fill = 'blue';
+    }, 4000)
+
+    const poplygon = document.querySelector('polygon')
+    let deg = 0;
+    setInterval(() => {
+        deg = deg === 360 ? 0 : deg+1;
+        poplygon.style.transform = `rotate(${deg}deg)`
+    }, 50)
+
+
+
+</script> 
+</body>
+</html>
