@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<body>
+    <!-- Video examples -->
+    <h1>Video with JS hands-on</h1>
+    <div>
+        <div><button onclick="playPause()">Play/Pause</button></div>
+        <video width="600" height="400" controls autoplay muted loop>
+            <source src="sample-video.mp4" type="video/webm"></source>
+        </video>
+    </div>
+
+    <script>
+        const video = document.querySelector('video');
+        function playPause() {
+            if (video.paused) {
+                video.play()
+            } else {
+                video.pause()
+            }
+        }
+        function togglePIP() {
+            if (video.autoPictureInPicture) {
+                video.removeAttribute('autoPictureInPicture');
+            } else {
+                video.setAttribute('autoPictureInPicture', 'true');
+            }
+        }
+    </script>
+    
+</body>
+</html>

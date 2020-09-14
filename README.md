@@ -6,3 +6,4 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 2/100: HTML Elements
  - 3/100: Form & Form Elements
  - 4/100: Canvas and Svg
+ - 5/100: Multimedia
