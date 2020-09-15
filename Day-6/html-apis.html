@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML APIs</title>
+</head>
+<body>
+    <div>
+        <h1>Geolocation Example</h1>
+        <button onclick="getCurrentLocation()">Get Current Location</button>
+        <p id="loader" style="display: none;">loading....</p>
+        <p id="lat"></p>
+        <p id="long"></p>
+    </div>
+    <div>
+        <h1>Drag and Drop</h1>
+        <div>
+            <p id="drag" draggable="true" ondragstart="onDragStart(event)"> I am draggable</p>
+        </div>
+        <div>
+            <h1>Drop Area</h1>
+            <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)" style="height: 200px; width:200px; border: 1px solid red;"></div>
+        </div>
+    </div>
+    <div>
+        <h1>Web Worker Example</h1>
+        <p>Count numbers: <output id="result"></output></p>
+        <button onclick="startWorker()">Start Worker</button> 
+        <button onclick="stopWorker()">Stop Worker</button>
+    </div>
+    <script>
+        // Geolocation Code start
+        const latitude = document.querySelector('#lat');
+        const longitude = document.querySelector('#long');
+        const loader = document.querySelector('#loader');
+
+        function getCurrentLocation() {
+            loader.style.display = 'block';
+            const geoLoc = navigator.geolocation;
+            if (geoLoc) {
+                geoLoc.getCurrentPosition(position => {
+                    latitude.innerText = `Latitude: ${position.coords.latitude}`;
+                    longitude.innerText = `Longitude: ${position.coords.longitude}`;
+                    loader.style.display = 'none';
+                }, error => {
+                    loader.style.display = 'none';
+                    latitude.innerText = error.message;
+                    latitude.style.color = 'red';
+                    console.error(error);
+                })
+            } else {
+                console.error("Browser doesn't support Geolocation");
+            }
+        }
+        // Geolocation code end
+
+        // Drag and Drop code start
+        function onDragStart(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);        }
+
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));   
+        }
+        // Drag and Drop code end
+        let w
+        // Web Worker
+        function startWorker() {
+            w = new Worker("http://127.0.0.1:5500/Day-6/web-worker.js");
+            w.onmessage = function(event) {
+                document.getElementById("result").innerHTML = event.data;
+            };               
+        }
+        function stopWorker() { 
+            w.terminate();
+            w = undefined;
+        }
+
+        // SSE
+        // if(typeof(EventSource) !== "undefined") {
+        //     var source = new EventSource("<path to api>");
+        //     source.onmessage = function(event) {
+        //         document.getElementById("result").innerHTML += event.data + "<br>";
+        //     };
+        // } else {
+        //     document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events...";
+        // }
+    </script>
+</body>
+</html>
