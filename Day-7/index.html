@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Style</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <section style="border: 1px solid;padding:10px">
+            <h1>Specificity Practice</h1>
+            <h2 style="color:black" id="heading">I am here to learn it again</h1>
+            <p>This time I'll make it happen</p>            
+        </section>
+        <section id="adjacent" style="border: 1px solid;padding:10px">
+            <h1>Combinators - Adjacent Sibling</h1>
+            <h2>This is dummy heading for leaning adjacent sibling</h1>
+            <p>This should be red</p>            
+            <h3>This is dummy heading</h3>
+            <p>This is normal text</p>
+            <h2>This is dummy heading</h2>
+            <p>This should be red</p>
+        </section>
+        <section id="general" style="border: 1px solid;padding:10px">
+            <h1>Combinators - General Sibling</h1>
+            <h2>This is dummy heading for leaning adjacent sibling</h1>
+            <p>This should be green</p>            
+            <h3>This is dummy heading</h3>
+            <p>This should be green</p>
+        </section>
+        <section id="child" style="border: 1px solid;padding:10px">
+            <h1>Combinators - Child</h1>
+            <div>
+                <div>Not applied</div>
+                <p>CSS applied</p>
+                <div>Not applied</div>
+                <article>
+                    <p>Not applied</p>
+                </article>
+                <p>CSS applied</p>
+            </div>
+        </section>
+        <section id="child" style="border: 1px solid;padding:10px">
+            <h1>Combinators - Descendant</h1>
+            <div>
+                <div>Not applied</div>
+                <p>CSS applied</p>
+                <div>Not applied</div>
+                <article>
+                    <p>CSS applied</p>
+                </article>
+                <p>CSS applied</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

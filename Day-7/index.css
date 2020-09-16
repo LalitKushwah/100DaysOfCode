@@ -1,0 +1,17 @@
+
+#heading {
+    color: green;
+}
+
+#adjacent h2 + p {
+    color: red;
+}
+#general h2 ~ p {
+    color: green;
+}
+#child div > p {
+    color: orangered;
+}
+#descendant div p {
+    color: orchid;
+}

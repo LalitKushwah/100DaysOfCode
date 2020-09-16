@@ -8,3 +8,4 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 4/100: Canvas and Svg
  - 5/100: Multimedia
  - 6/100: HTML APIs
+ - 7/100: CSS - Combinators
