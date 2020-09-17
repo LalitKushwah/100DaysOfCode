@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    box-sizing: content-box;
+    text-decoration: none;
+}
+section {
+    margin: 10px;
+}
+section + p {
+    margin: 20px;
+}
+.main-header {
+    background: black;
+    padding: 5px;
+    width: 100%;
+}
+.main-header a {
+    color: white;
+}
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+.main-header > nav {
+    display: inline-block;
+    width: calc(100% - 54px);
+    text-align: right;
+    vertical-align: middle;
+}
+.main-header > div > a {
+    font-weight: bold;
+}
+.nav-list-item {
+    display: inline-block;
+    padding: 10px;
+}
