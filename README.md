@@ -10,3 +10,4 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 6/100: HTML APIs
  - 7/100: CSS - Combinators
  - 8/100: CSS - Box Model
+ - 9/100: Pseudo Elements and Classes
