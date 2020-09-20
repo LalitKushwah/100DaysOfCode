@@ -12,3 +12,4 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 8/100: CSS - Box Model
  - 9/100: Pseudo Elements and Classes
  - 10/100: More on Selectors & CSS Features
+ - 11/100: Skill sectio designing

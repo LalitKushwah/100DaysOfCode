@@ -60,3 +60,35 @@ section + p {
     background-size: cover;
     height: 100vh;
 }
+a.active {
+    font-weight: bold;
+    color: white;
+}
+
+.skills-card-container {
+    text-align: center;
+}
+.skills-card {
+    display: inline-block;
+    padding: 10px;
+    margin:5px;
+    width: 25%;
+    vertical-align: center;
+    background: white;
+    transition: transform .2s;
+}
+.skills-card:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+#angular-img {
+    height: 220px;
+    width: 200px;
+    background: url("../assets/angular.png") no-repeat;
+}
+#nodejs-img {
+    height: 220px;
+    width: 0px;
+    background: url("../assets/nodejs.png") no-repeat;
+}
