@@ -14,3 +14,4 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 10/100: More on Selectors & CSS Features
  - 11/100: Skills section designing
  - 12/100: Organization section designing
+ - 13/100: Designing Footer
