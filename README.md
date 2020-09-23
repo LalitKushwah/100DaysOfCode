@@ -15,3 +15,4 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 11/100: Skills section designing
  - 12/100: Organization section designing
  - 13/100: Designing Footer
+ - 14/100: Footer enhancement
