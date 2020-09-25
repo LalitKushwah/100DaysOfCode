@@ -16,4 +16,5 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 12/100: Organization section designing
  - 13/100: Designing Footer
  - 14/100: Footer enhancement
- - 15/100: Element Positioning 
+ - 15/100: Element Positioning
+ - 16/100: Adding badges to skills
