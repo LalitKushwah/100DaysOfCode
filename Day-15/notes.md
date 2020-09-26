@@ -3,7 +3,7 @@ position property helps you to set the position of html element in view.It has f
     - absolute
     - fixed
     - relative
-    - sticky
+    - sticky (fixed + relative) (partially supported)
     - static (default)
 
 ## fixed
