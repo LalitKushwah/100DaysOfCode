@@ -19,3 +19,4 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 15/100: Element Positioning
  - 16/100: Adding badges to skills
  - 17/100: Stacking Context
+ - 18/100: Backround Images & Images
