@@ -20,3 +20,4 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 16/100: Adding badges to skills
  - 17/100: Stacking Context
  - 18/100: Backround Images & Images
+ - 19/100: Gradient and Filters
