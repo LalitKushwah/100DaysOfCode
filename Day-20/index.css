@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    overflow-x: hidden;
+}
+section {
+    margin: 0.625rem;
+}
+section + p {
+    margin: 20px;
+}
+.main-header {
+    background: black;
+    padding: 0.3125rem;
+    width: 100%;
+}
+.main-header a {
+    color: #999;
+}
+.main-header a:hover,
+.main-header a:active {
+    color: white;
+}
+
+.nav-list-item--cta {
+    background: white;
+    border-radius: 70px;
+}
+
+.nav-list-item--cta a:hover {
+    color: black;
+}
+
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+.main-header > nav {
+    display: inline-block;
+    width: calc(100% - 54px);
+    text-align: right;
+    vertical-align: middle;
+}
+.main-header > div > a {
+    font-weight: bold;
+}
+.nav-list-item {
+    display: inline-block;
+    padding: 0.625rem;
+}
+#skills,#org,#contact {
+    position: relative;
+    z-index: 0;
+}
+.home {
+    margin:0;
+}
+.home img {
+    width: 100%;
+    height: 50%;
+}
+.home_img {
+    background: url('../assets/home.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    filter: grayscale(60%);
+}
+a.active {
+    font-weight: bold;
+    color: white;
+}
+
+.skills-card-container {
+    text-align: center;
+}
+.skills-card {
+    display: inline-block;
+    padding: 0.625rem;
+    margin:0.3125rem;
+    width: 25%;
+    vertical-align: center;
+    background: white;
+    transition: transform .2s;
+    min-width: 375px;
+}
+.skills-card:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+.skills-card {
+    position: relative;
+}
+.skills_level_badge {
+    position: absolute;
+    top:0;
+    right:100px
+}
+.skills_level_pro_badge,
+.skills_level_newbie_badge {
+    background: green;
+    margin:2px;
+    color: white;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.3125rem 0.625rem;
+    border-radius: 20px;
+}
+.skills_level_newbie_badge {
+    background: grey;
+}
+.skills_level_advanced_badge {
+    background: orange;
+    right:30px;
+}
+.skills_level_intermediate_badge {
+    background: royalblue;
+}
+.ionic_badge {
+    top: 25px;
+    right:125px
+}
+.novice_badge {
+    top:20px;
+}
+#angular-img {
+    height: 220px;
+    width: 200px;
+    background: url("../assets/angular.png") no-repeat;
+}
+#nodejs-img {
+    height: 220px;
+    width: 0px;
+    background: url("../assets/nodejs.png") no-repeat;
+}
+#org {
+    margin:0;
+}
+#org > div > h2 {
+    text-align: center;
+    color: black;
+    margin: 1.25rem;
+    height: 100px;
+}
+.org_container {
+    background-color: dimgrey;
+    width: 100%;
+    padding:3.125rem;
+    text-align: center;
+    vertical-align: middle;
+}
+.org_container {
+    background-image: linear-gradient(to right, #89f7fe, #66a6ff);
+    background-size: 100% 100%;
+}
+.org_item {
+    display: inline-block;
+    padding: 0.625rem;
+    margin:0.3125rem;
+    width: 25%;
+    vertical-align: center;
+    color: black;
+    text-align: center;
+    border: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: 2px white;
+}
+.org_item_image > p {
+    font-style: italic;
+    margin: auto;
+}
+#contact > div {
+    text-align: center;
+    width: 100%;
+    color: white;
+    background-color: #141414;
+}
+#contact > div > div > span {
+    display: inline-block;
+    font-size: 24px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+footer > div {
+    padding: 3.125rem;;
+}
+.footer-content-container {
+    width: 100%;
+    color: white;
+    background-color: #141414;
+}
+.footer-content-container > .footer-content{
+    display: inline-block; 
+    width: 49%;
+}
+.footer-list-container {
+    padding: 0;
+    list-style: none;
+}
+.footer-list-item {
+    margin: 0.625rem;
+    text-align: center;
+}
+
+.footer-list-item > a {
+    color: white;
+    cursor: pointer;
+}
+.footer-list-item > a > span {
+    margin:0.625rem;
+}
+header {
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    z-index:1;
+}
+.logo-container {
+    height: 3.125rem;
+}
+.logo-container a > img {
+    height: 100%;
+}
