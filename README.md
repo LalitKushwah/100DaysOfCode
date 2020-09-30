@@ -22,3 +22,4 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 18/100: Backround Images & Images
  - 19/100: Gradient and Filters
  - 20/100: Font size and units
+ - 21/100: Addding hamburger menu
