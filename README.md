@@ -24,3 +24,4 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 20/100: Font size and units
  - 21/100: Addding hamburger menux
  - 22/100: Responsiveness
+ - 23/100: Mobile First Approach

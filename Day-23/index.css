@@ -4,7 +4,7 @@
     text-decoration: none;
 }
 body {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 section {
     margin: 0.625rem;
@@ -278,13 +278,146 @@ header {
     font-size: 1.5rem;
 }
 @media (max-width: 414px) {
+    #web-nav {
+        display: none;
+    }
+    .logo-container {
+        float: right;
+    }
     .skills-card {
         min-width: 16rem;
     }
     .skills-card > img {
         width: 80%;
     }
-    .home_img {
-        width: 80vh;
+    .skills_level_badge {
+        right: 0;
+    }
+    .org_item {
+        padding: auto;
+        margin: auto;
+        min-width: 22.5rem;
+    }
+    .org_item_image > img {
+        width: 80%;
+    }
+    .org_container {
+        padding: 0;
+    }   
+    .footer-content-container > .footer-content {
+        display: block;
+        width: auto;
+        margin: 2rem;
+    }
+    .skills_level_advanced_badge {
+        right: -2.1875rem;
+    }
+}
+@media(max-width: 686px) {
+    #web-nav {
+        display: none;
+    }
+    .logo-container {
+        float: right;
+    }
+    .skills-card {
+        min-width: 22.375rem;
+    }
+    .skills-card > img {
+        width: 80%;
+    }
+    .skills_level_badge {
+        right: 0;
+    }
+    .org_item {
+        padding: auto;
+        margin: auto;
+        min-width: 28.1875rem;
+    }
+    .org_item_image > img {
+        width: 80%;
+    }
+    .org_container {
+        padding: 0;
+    }
+    .skills_level_advanced_badge {
+        right: -1.25rem;
+        top: -0.625rem;
+    }
+    .ion_badge {
+        top:2.1875rem;
+        right:0.9375rem;
+    }
+}
+@media(max-width: 1080px) {
+    #web-nav {
+        display: none;
+    }
+    .logo-container {
+        float: right;
+    }
+    .skills-card {
+        min-width: 22.375rem;
+    }
+    .skills-card > img {
+        width: 80%;
+    }
+    .skills_level_badge {
+        right: 0;
+    }
+    .org_item {
+        padding: auto;
+        margin: auto;
+        min-width: 48.1875rem;
+    }
+    .org_item_image > img {
+        width: 40%;
+    }
+    .org_container {
+        padding: 0;
+    }
+    .skills_level_advanced_badge {
+        right: -1.25rem;
+        top: -0.625rem;
+    }
+    .ion_badge {
+        top:2.1875rem;
+        right:0.9375rem;
+    }
+}
+@media(max-width: 1192px) {
+    #web-nav {
+        display: none;
+    }
+    .logo-container {
+        float: right;
+    }
+    .skills-card {
+        min-width: 22.375rem;
+    }
+    .skills-card > img {
+        width: 80%;
+    }
+    .skills_level_badge {
+        right: 0;
+    }
+    .org_item {
+        padding: auto;
+        margin: auto;
+        min-width: 24.1875rem;
+    }
+    .org_item_image > img {
+        width: 60%;
+    }
+    .org_container {
+        padding: 0;
+    }
+    .skills_level_advanced_badge {
+        right: -1.25rem;
+        top: -0.625rem;
+    }
+    .ion_badge {
+        top:2.1875rem;
+        right:0.9375rem;
     }
 }
