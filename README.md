@@ -26,3 +26,4 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 22/100: Responsiveness
  - 23/100: Mobile First Approach
  - 24/100: Media Queries and Fonts
+ - 25/100: Flexbox
