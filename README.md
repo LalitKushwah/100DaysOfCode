@@ -28,3 +28,4 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 24/100: Media Queries and Fonts
  - 25/100: Flexbox
  - 26/100: Vue.js Kick Off
+ - 27/100: DOM Interaction with Vue
