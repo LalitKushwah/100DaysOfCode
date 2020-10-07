@@ -29,3 +29,4 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 25/100: Flexbox
  - 26/100: Vue.js Kick Off
  - 27/100: DOM Interaction with Vue
+ - 28/100: More about conditional directives and practice
