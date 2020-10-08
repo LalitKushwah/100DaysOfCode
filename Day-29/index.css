@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+div {
+    border: 1px solid whitesmoke;
+    box-shadow: 2px 2px 2px pink;
+    text-align: center;
+    position: relative;
+    top: 20vh;
+    left:45%;
+    width: 200px;
+}
+input {
+    width: 50%;
+    border: 1px solid black;    
+}
+button {
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    padding: 2px;
+    margin:5px;
+}

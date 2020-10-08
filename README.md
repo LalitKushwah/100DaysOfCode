@@ -30,3 +30,4 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 26/100: Vue.js Kick Off
  - 27/100: DOM Interaction with Vue
  - 28/100: More about conditional directives and practice
+ - 29/100: Vue: Behind the scenes (Virtual DOM)
