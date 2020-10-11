@@ -32,3 +32,5 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 28/100: More about conditional directives and practice
  - 29/100: Vue: Behind the scenes (Virtual DOM)
  - 30/100: Components 
+ - 31/100: Vue-CLI
+ - 32/100: Component Communication
