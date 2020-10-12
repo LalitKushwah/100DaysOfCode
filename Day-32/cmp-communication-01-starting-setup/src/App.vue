@@ -51,6 +51,7 @@ export default {
       console.log(this.friends.length);
     },
     removeFriend (name) {
+      console
       const updatedList = this.friends.filter(item => item.name !== name);
       this.friends = updatedList;
     }
