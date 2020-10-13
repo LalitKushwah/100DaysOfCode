@@ -34,3 +34,5 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 30/100: Components 
  - 31/100: Vue-CLI
  - 32/100: Component Communication
+ - 33/100: Teleport, Slots ,scoped slots
+ - 34/100: Remember Me app
