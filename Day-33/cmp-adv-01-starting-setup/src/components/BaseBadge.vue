@@ -26,7 +26,7 @@ export default {
 }
 
 .badge--admin {
-  background-color: #810036;
+  background-color: #810036;  
   color: white;
 }
 

@@ -37,3 +37,4 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 33/100: Teleport, Slots ,scoped slots
  - 34/100: Remember Me app
  - 35/100: Forms
+ - 36/100: Routing
