@@ -38,3 +38,6 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 34/100: Remember Me app
  - 35/100: Forms
  - 36/100: Routing
+ - 37/100: Vuex
+ - 38/100: Portfolio - Part-I
+ - 39/100: Portfolio - Part-II
