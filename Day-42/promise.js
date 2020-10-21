@@ -32,6 +32,7 @@ function third (_param) {
 //     console.log('=========== 34 ==========');
 // });
 // .then(secRes => third(secRes)).then(response => console.log(response));
+
 async function displayResult() {
     try {
         const firstRes = await first(1);
