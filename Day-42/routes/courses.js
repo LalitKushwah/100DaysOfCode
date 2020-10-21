@@ -1,6 +1,6 @@
-const Joi = require('joi');
 const express = require('express');
-const app = express();
+const router = express.Router();
+const Joi = require('joi');
 
 const courses = [
     {
@@ -17,14 +17,11 @@ const courses = [
     }
 ];
 
-app.use(express.json());
-
-
-app.get('/api/courses', (req,res) => {
+router.get('/', (req,res) => {
     res.send(courses);
 });
 
-app.get('/api/courses/:id', (req,res) => {
+router.get('/:id', (req,res) => {
     const id = req.params.id;
     if (!id) return res.status(400).send('ID is mandatory field');
     const course = courses.find(c => c.id === parseInt(id));
@@ -32,7 +29,7 @@ app.get('/api/courses/:id', (req,res) => {
     return res.send(course);
 })
 
-app.post('/api/courses', (req,res) => {
+router.post('/', (req,res) => {
     const course = req.body;
     const isValidBOdy = validateRequestData(course);
     if (isValidBOdy.error) return res.status(400).send(isValidBOdy.error.details[0].message);    
@@ -44,7 +41,7 @@ app.post('/api/courses', (req,res) => {
     return res.send(courses);
 });
 
-app.put('/api/courses/:id', (req,res) => {
+router.put('/:id', (req,res) => {
     const id = req.params.id;
     if (!id) return res.status(400).send('Id is mandatory to update course');
     
@@ -60,7 +57,7 @@ app.put('/api/courses/:id', (req,res) => {
     return res.send(course);
 })
 
-app.delete('/api/courses/:id', (req,res) => {
+router.delete('/:id', (req,res) => {
     const id = req.params.id;
     if (!id) return res.status(400).send('Id is mandatory to update course');
 
@@ -69,7 +66,6 @@ app.delete('/api/courses/:id', (req,res) => {
 
     courses.splice(index, 1);
     return res.send(courses);
-
 })
 
 function validateRequestData(data) {
@@ -77,5 +73,4 @@ function validateRequestData(data) {
     return schema.validate(data);
 }
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Sever is listening on port: ${port}`));
+module.exports = router;
