@@ -41,3 +41,8 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 37/100: Vuex
  - 38/100: Portfolio - Part-I
  - 39/100: Portfolio - Part-II
+ - 40/100: Node.js internal functioning and built-in modules
+ - 41/100: CRUD API using express and Joi valiation
+ - 42/100: Custom and Built-in middleware, Asynchronous programming
+ - 43/100: Mongoose Data Validation and modeling relationship between connected data using normalize and denormalize
+ - 44/100: Vidly project
