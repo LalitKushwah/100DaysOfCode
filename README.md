@@ -46,3 +46,6 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 42/100: Custom and Built-in middleware, Asynchronous programming
  - 43/100: Mongoose Data Validation and modeling relationship between connected data using normalize and denormalize
  - 44/100: Vidly project
+ - 45/100: Hacker Rank problem
+ - 46/100: HackerRank Problem
+ - 47/100: MongoDB and HackerRank problem
