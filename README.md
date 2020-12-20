@@ -49,3 +49,56 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 45/100: Hacker Rank problem
  - 46/100: HackerRank Problem
  - 47/100: MongoDB and HackerRank problem
+ - 48/100: ind merge node in linked list
+ - 49/100: relation amonng different documents and hackerrank problem
+ - 50/100: reversing doubky linked list
+ - 51/100: mongodb write queries
+ - 52/100: read and delete operation
+ - 53/100: update operations
+ - 54/100: indexing
+ - 55/100: aggregation and geo-coordinates
+ - 56/100: mongo performance,fault tolerance,security and transaction
+ - 57/100: mongo driver
+ - 58/100: portfolio changes
+ - 59/100: asymptotic notation
+ - 60/100: problem solving approaches
+ - 61/100: custom array DS implementation
+ - 62/100: array practice
+ - 63/100: hash tables
+ - 64/100: custom linked list creation to understand complexity of this DS better
+ - 65/100: custom stack implementation using linkedlist and array
+ - 66/100: trees
+ - 67/100: graphs
+ - 68/100: problem solving
+ - 69/100: recursion
+ - 70/100: angular
+ - 71/100: sorting algorithm
+ - 72/100: recursion
+ - 73/100: angular
+ - 74/100: merge sort
+ - 75/100: selecting sorting methods based on problem
+ - 76/100: bfs and df
+ - 77/100: hackerrank problem
+ - 78/100: graphql
+ - 79/100: problem solving
+ - 80/100: react routing
+ - 81/100: react hooks
+ - 82/100: redux
+ - 83/100: react query
+ - 84/100: hoc
+ - 85/100: movie app
+ - 86/100: movies list screen
+ - 87/100: movie app
+ - 88/100: service and interceptors
+ - 89/100: error boundary
+ - 90/100: js unknown concepts
+ - 91/100: constructor function, shallow & deep clone
+ - 92/100: problem solving
+ - 93/100: array rotation problem
+ - 94/100: shallow copy
+ - 95/100: closure
+ - 96/100: hoisting in javascript
+ - 97/100: problem solving
+ - 98/100: refreshing react concepts
+ - 99/100: burger app
+ - 100/100: enhancements in burger builder app
