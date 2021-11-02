@@ -102,3 +102,5 @@ only one rule to follow <b>code</b> to understand concepts better.
  - 98/100: refreshing react concepts
  - 99/100: burger app
  - 100/100: enhancements in burger builder app
+ - 101/200: Created bodycare project
+ - 102/200: Solved one data structure problem and enhanced bodycare app
