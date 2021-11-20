@@ -3,20 +3,20 @@ function kadanesAlgorithm(array) {
   let maxSum = -Infinity;
   let minIndex = 0;
   let maxIndex = 0;
+  let s = 0;
   for (let i = 0; i < array.length; i++) {
     const temp = array[i] + currSum;
-    if (array[i] > temp) {
-      currSum = array[i];
-    } else if (temp > array[i]) {
-      currSum = temp;
-    } else if (currSum < 0) {
-      minIndex = i + 1;
+    if (temp < array[i]) {
+      s = i + 1;
     }
+    currSum = Math.max(temp, array[i]);
     if (currSum > maxSum) {
+      console.log(s);
       maxIndex = i;
+      minIndex = s;
       maxSum = currSum;
     }
   }
   return { maxSum, minIndex, maxIndex };
 }
-console.log(kadanesAlgorithm([-2, 9, -11, 6]));
+console.log(kadanesAlgorithm([-6, -3, -4, -11, -2]));
