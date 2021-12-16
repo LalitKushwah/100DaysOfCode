@@ -11,5 +11,20 @@ function minimumWaitingTime(queries) {
   return sum;
 }
 
+// Bubble sort
+function bubbleSort(array) {
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length; j++) {
+      const item = array[j];
+      if (item > array[j + 1]) {
+        array[j] = array[j + 1];
+        array[j + 1] = item;
+      }
+    }
+  }
+  console.log(array);
+  return array;
+}
+
 // Do not edit the line below.
-exports.minimumWaitingTime = minimumWaitingTime;
+exports.bubbleSort = bubbleSort;
