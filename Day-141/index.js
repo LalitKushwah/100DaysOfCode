@@ -17,6 +17,3 @@ function isValidSubsequence(array, sequence) {
   }
   return sequencePointer === sequence.length;
 }
-
-// Do not edit the line below.
-exports.isValidSubsequence = isValidSubsequence;

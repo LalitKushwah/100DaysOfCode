@@ -8,3 +8,10 @@ function counter() {
   }
 }
 counter();
+
+// Applications where we can use Closures
+/**
+ * 1. Module pattern implementation
+ * 2. Memoization (Dynamic programming)
+ * 3. Data Hiding
+ */

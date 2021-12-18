@@ -22,9 +22,5 @@ function bubbleSort(array) {
       }
     }
   }
-  console.log(array);
   return array;
 }
-
-// Do not edit the line below.
-exports.bubbleSort = bubbleSort;

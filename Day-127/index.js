@@ -20,3 +20,14 @@ var twoSum = function (nums, target) {
   }
   return [];
 };
+
+
+const maxSubArray = nums => nums.reduce(
+  ([localMax, globalMax], curr) => [
+    Math.max(curr, localMax + curr),
+    Math.max(curr, localMax + curr, globalMax),
+  ],
+  [-Infinity, -Infinity]
+)[1];
+
+console.log(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]));

@@ -17,3 +17,5 @@ function abc(name, isDev) {
 const obj1 = { lalit: "lalit" };
 console.log(obj1);
 console.log(abc("Lalit", true));
+
+

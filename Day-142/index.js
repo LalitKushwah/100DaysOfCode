@@ -19,9 +19,13 @@ function sortedSquaredArray(array) {
   }
   return result;
 }
-
+/**
+ * Using inbuilt functions
+*/
 function sortedSquaredArray(array) {
   const transformedArray = array.map((ele) => ele * ele);
   transformedArray.sort((a, b) => a - b);
   return transformedArray;
 }
+
+
