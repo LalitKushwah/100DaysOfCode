@@ -41,3 +41,17 @@ function tandemBicycle(redShirtSpeeds, blueShirtSpeeds, fastest) {
 
   return res;
 }
+
+// no external pair array
+function tandemBicycle(redShirtSpeeds, blueShirtSpeeds, fastest) {
+  redShirtSpeeds.sort((a, b) => a - b); // ascending
+  blueShirtSpeeds.sort((a, b) => a - b);
+  let index = fastest ? 0 : blueShirtSpeeds.length - 1;
+  let sum = 0;
+  for (let i = redShirtSpeeds.length - 1; i >= 0; i--) {
+    sum += Math.max(redShirtSpeeds[i], blueShirtSpeeds[index]);
+    index += fastest ? 1 : -1;
+  }
+
+  return sum;
+}
