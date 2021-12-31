@@ -1,75 +1,60 @@
-"use strict";
+'use strict';
 
-const express = require("express");
+const express = require('express');
 const app = express();
-const bodyParser = require("body-parser");
 app.use(express.json());
-app.use(bodyParser.json());
-const candidates = [
-  {
-    id: "1",
-    name: "Lalit",
-    skills: ["React", "JS"],
-  },
-  {
-    id: "2",
-    name: "Krishan",
-    skills: ["Angular", "Node"],
-  },
-  {
-    id: "1",
-    name: "Aman",
-    skills: ["React", "JS", "Mongo"],
-  },
-];
+
+const candidates = [];
 
 // Your code starts here. Placeholders for .get and .post are provided for
 //  your convenience.
 
 app.post("/candidates", function (req, res) {
   const { body } = req;
+  let responseStatus = 400;
   if (body) {
     candidates.push(body);
-    return res.status(200).send();
-  } else {
-    return res.status(400).send({ message: "Bad Request" });
+    responseStatus = 200;
   }
+  return res.status(responseStatus).send();
 });
 
 app.get("/candidates/search", function (req, res) {
+  // when no candidate defined
   if (!candidates.length) return res.status(404).send();
+
   const { skills } = req.query;
-  console.log(typeof skills);
-  if (skills) {
-    const skillsArray = skills.toString().split(",");
-    console.log("===== skills= ===", skillsArray);
-    const bestMatch = findBestCandidate(skillsArray);
-    if (Object.keys(bestMatch).length) {
-      return res.status(200).send(bestMatch);
-    }
-    return res.status(404).send();
-  } else {
-    return res.status(400).send();
+  if(!skills) return res.status(400).send();
+  
+  // As typeof query will be string we can operate split method directly
+  const requestedSkills = skills.split(",");
+  const bestMatchCandidate = findBestCandidate(requestedSkills);
+
+  // TODO: can use lodash for shorter syntax
+  if (Object.keys(bestMatchCandidate).length) {
+    return res.status(200).send(bestMatchCandidate);
   }
+  return res.status(404).send();
 });
 
 function findBestCandidate(requestedSkills) {
-  let bestMatchFound = 0;
+  let bestMatchedSkillsCount = 0;
   let bestMatchCandidate = {};
   const requestedSkillMap = {};
+
+  // prepare requested skill hash map 
   for (let reqSkill of requestedSkills) {
     requestedSkillMap[reqSkill] = 1;
   }
-  console.log("requestedSkillMap", requestedSkillMap);
-
   for (let candidate of candidates) {
-    let count = 0;
+    let skillMatchedCount = 0;
     candidate.skills.forEach((skill) => {
-      if (requestedSkillMap[skill]) count++;
+      if (requestedSkillMap[skill]) skillMatchedCount++;
     });
-    if (bestMatchFound < count) {
+    // update best match if current candidate has better match
+    if (bestMatchedSkillsCount < skillMatchedCount) {
       bestMatchCandidate = candidate;
-      bestMatchFound = count;
+      bestMatchedSkillsCount = skillMatchedCount;
     }
   }
   return bestMatchCandidate;

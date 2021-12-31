@@ -15,6 +15,17 @@ function masterFibbonaci() {
     }
   };
 }
+
+let cal = 0;
+function fib(n) {
+  cal++;
+  if (n < 2) return n;
+  return fib(n - 1) + fib(n - 2);
+}
+
+// fib(20);
+// console.log(cal);
+
 const main = masterFibbonaci();
-console.log(main(10));
+console.log(main(20));
 console.log(calculation);
