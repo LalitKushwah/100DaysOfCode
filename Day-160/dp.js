@@ -37,10 +37,3 @@ function factorial(n) {
 // console.log(cal);
 
 // console.log(knapsack([1, 3, 4, 5], [1, 4, 5, 7], 10, 4));
-
-
-
-
-DOS
-DDOs
-CSRF
