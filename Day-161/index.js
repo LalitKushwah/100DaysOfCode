@@ -1,4 +1,4 @@
-/* 
+/*
 
 Consider the following operation on an arbitrary positive integer:
 If the number is even, divide it by two.
@@ -15,8 +15,8 @@ Eg: 6 > 3 > 10 > 5 > 16 > 8 > 4 > 2 > 1
 Eg: 7 > 22 > 11 > 34 > 17 > 52 > 26 > 13 > 40 > 20 > 10 > 5 > 16 > 8 > 4 > 2 > 1
 
 Write a function called findHighestPeak that takes two positive integers as arguments.
-The function should return the highest value reached among the collatz conjecture sequences 
-derived by taking all the integers between the two integer arguments, 
+The function should return the highest value reached among the collatz conjecture sequences
+derived by taking all the integers between the two integer arguments,
 as the initial values of the sequences.
 
 */
