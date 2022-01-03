@@ -12,7 +12,6 @@ function simplify(str) {
     if (input === "(" && i === 0) {
       continue;
     }
-
     if (input === "+") {
       if (stack[stack.length - 1] === 1) res.push("-");
       if (stack[stack.length - 1] === 0) res.push("+");
