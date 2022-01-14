@@ -1,0 +1,63 @@
+<div class="l"></div>
+<div class="c"></div>
+<div class="r"></div>
+<style>
+  .c {
+  }
+  .l,
+  .r,
+  .c {
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    border: 20px solid #d86f45;
+  }
+  .l {
+    left: 70px;
+  }
+  .r {
+    right: 70px;
+  }
+  .l,
+  .r {
+    border-top: 0;
+    top: 50%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  .c {
+    left: 150px;
+    top: 34%;
+    border-bottom: 0;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+  }
+  .l:before,
+  .r:after {
+    content: "";
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    background: #d86f45;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    top: -10px;
+  }
+  .l:before {
+    left: -20px;
+  }
+  .r:after {
+    left: 60px;
+  }
+  body {
+    background-color: #f5d6b4;
+  }
+</style>
+
+<!-- OBJECTIVE -->
+<!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
+
+<!-- SCORING -->
+<!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
+
+<!-- IMPORTANT: remove the comments before submitting -->
