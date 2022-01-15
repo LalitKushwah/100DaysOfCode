@@ -1,0 +1,61 @@
+<div class="top">
+  <div class="slice first"></div>
+  <div class="slice second"></div>
+  <div class="slice third"></div>
+  <div class="slice fourth"></div>
+</div>
+<div class="base"></div>
+
+<style>
+  .first,
+  .second,
+  .third {
+    background-color: #f9e492;
+  }
+  .fourth {
+    background-color: #191919;
+  }
+
+  .slice {
+    width: 50%;
+    height: 50%;
+    margin: 0;
+    paddin: 0;
+  }
+  .top {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    transform: rotate(45deg);
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 102px;
+    top: 50px;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: #f9e492;
+  }
+  .base {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -100;
+    left: 100px;
+    transform: rotate(45deg);
+    background-color: #4f77ff;
+    z-index: 1;
+  }
+  body {
+    background-color: #191919;
+    margin: 0;
+  }
+</style>
+
+<!-- OBJECTIVE -->
+<!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
+
+<!-- SCORING -->
+<!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
+
+<!-- IMPORTANT: remove the comments before submitting -->
