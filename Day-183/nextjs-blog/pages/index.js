@@ -11,7 +11,7 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Go To{" "}
+          Go To
           <Link href="/posts/first-post">
             <a>Post</a>
           </Link>
